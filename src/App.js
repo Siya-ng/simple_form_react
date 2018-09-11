@@ -4,6 +4,7 @@ import './App.css';
 import Personal from './components/Personal';
 import Family from './components/Family';
 import Travel from './components/Travel';
+import Result from './components/Result';
 
 class App extends Component {
   state = {
@@ -233,16 +234,7 @@ class App extends Component {
             </form>
           </div>
         ) :(
-          <div>
-            <h2>{this.state.name}</h2>
-            <h3>{this.state.email}</h3>
-            <h3>{this.state.phoneNumber}</h3>
-            <h4>{this.state.spouseName}</h4>
-            <h4>{this.state.noOfChildren}</h4>
-            <h4>from: {this.state.fromLocation}</h4>
-            <h4>to: {this.state.toLocation}</h4>
-            <h4>date: {this.state.travelDate}</h4>
-          </div>
+          <Result details={this.state} />
         )}
       </div>
     );

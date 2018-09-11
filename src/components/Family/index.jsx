@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 const childrenOption = [ 0, 1, 2, 3, 4, 5]
+
 class Family extends Component {
 
   render (){
